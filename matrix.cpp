@@ -86,7 +86,7 @@ Matrix &Matrix::operator=(Matrix other_matrix)
 Matrix::Matrix(int N, int M) : N(N), M(M)
 {
     values = new double *[N];
-    for (int i = 0; i < N; i++)
+    for (int i = 0; i < N; ++i)
     {
         values[i] = new double[M];
     }
