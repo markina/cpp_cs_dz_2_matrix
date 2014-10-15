@@ -1,6 +1,8 @@
 #include <fstream>
 #include <stdexcept>
 #include "matrix.hpp"
+#include <iostream>
+#include <cstring>
 
 Matrix Matrix::read_from_file(const char *file_name)
 {

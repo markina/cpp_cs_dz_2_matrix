@@ -1,8 +1,5 @@
 #pragma once
 
-#include <iostream>
-#include <cstring>
-
 const std::string USAGE = "USAGE: ./main file_name_with_initial_matrix [[--add | --mult] file_name_with_matrix]*";
 
 class Matrix
