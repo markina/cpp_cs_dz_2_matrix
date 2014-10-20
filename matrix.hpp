@@ -4,10 +4,10 @@ const std::string USAGE = "USAGE: ./main file_name_with_initial_matrix [[--add |
 
 class Matrix
 {
-    double **values;
-    int N;
-    int M;
-
+private:
+    double **m_values;
+    int m_row;
+    int m_column;
 public:
     static Matrix read_from_file(const char *file_name);
 
@@ -19,7 +19,7 @@ public:
 
     void print_matrix() const;
 
-    Matrix(int N, int M);
+    Matrix(int row, int column);
 
     Matrix(const Matrix &other_matrix);
 
